@@ -1,6 +1,6 @@
-# angular-swagger-ui-example
+# Angular Swagger UI Example
 
-This repo shows how to implement swagger-ui into an angular project.
+This repo shows how to implement swagger-ui into an angular project. Main reference and thanks goes to https://github.com/dinohorvat/swagger-editor-angular8
 
 ## Install Swagger UI
 
@@ -18,7 +18,7 @@ Configure the angular.json file and desired component for swagger-ui.
 
 #### `angular.json`
 
-```
+```js
 "styles": [
     "node_modules/swagger-ui-dist/swagger-ui.css",
     "src/styles.css"
@@ -31,7 +31,7 @@ Configure the angular.json file and desired component for swagger-ui.
 
 #### `component.ts`
 
-```
+```js
 import { Component, OnInit } from '@angular/core';
 
 declare const SwaggerUIBundle: any;
@@ -61,7 +61,7 @@ export class SwaggerUiComponent implements OnInit {
 
 #### `component.html`
 
-```
+```html
 <div id="swagger-editor"></div>
 ```
 
@@ -74,7 +74,7 @@ Add different themes to your api docs.
  - Follow instructions above to install and configure `swagger-ui-dist`
  - Install [swagger-ui-themes](https://github.com/ostranme/swagger-ui-themes)
 
-```
+```bash
 npm install swagger-ui-themes --save
 ```
 
@@ -83,7 +83,8 @@ npm install swagger-ui-themes --save
 Configure the angular.json file
 
 #### `angular.json`
-```
+
+```js
 "styles": [
     ...
     "node_modules/swagger-ui-themes/themes/3.x/theme-material.css",
