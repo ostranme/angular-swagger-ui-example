@@ -62,7 +62,7 @@ export class SwaggerUiComponent implements OnInit {
 #### `component.html`
 
 ```html
-<div id="swagger-editor"></div>
+<div id="swagger-ui"></div>
 ```
 
 ## Using Swagger UI Themes
